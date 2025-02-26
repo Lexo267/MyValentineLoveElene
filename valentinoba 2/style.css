@@ -1,0 +1,168 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://i.pinimg.com/736x/46/80/3e/46803ed74f70cc5c85e2ad0fd14adf13.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1 {
+    color: #e60073;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.message p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.gallery {
+    margin-top: 20px;
+}
+
+.gallery h2 {
+    color: #e60073;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.photos img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.photos img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* მუსიკის პლეერი */
+.music-player {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.music-player button {
+    background-color: #e60073;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.music-player button:hover {
+    background-color: #ff4d94;
+}
+
+#currentSong, #songTitle {
+    font-size: 14px;
+    color: #333;
+}
+
+#progressBar {
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+#volumeControl {
+    width: 80px;
+    cursor: pointer;
+}
+
+#currentTime, #duration {
+    font-size: 12px;
+    color: #555;
+}
+
+/* რესპონსიული დიზაინი */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .photos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .message p {
+        font-size: 1em;
+    }
+
+    .music-player {
+        flex-wrap: wrap;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    #progressBar, #volumeControl {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .photos {
+        grid-template-columns: 1fr;
+    }
+
+    .message p {
+        font-size: 0.9em;
+    }
+
+    .music-player {
+        bottom: 10px;
+        padding: 5px;
+    }
+
+    #currentSong, #songTitle {
+        font-size: 12px;
+    }
+}

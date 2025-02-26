@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ვალენტინობის მისალოცი ელენესთვის</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ელენე, ჩემო სიყვარულო! 💖</h1>
+        </header>
+        <main>
+            <section class="message">
+                <p>შენი სიყვარული ჩემი ცხოვრების ყველაზე ლამაზი ზღაპარია. ვალენტინობის დღეს გისურვებ, რომ ყოველი დღე შენთან ერთად ისეთივე მაგიური იყოს, როგორც ეს მომენტი. მიყვარხარ! 🌸</p>
+            </section>
+            <section class="gallery">
+                <h2>ჩვენი მოგონებები 💞</h2>
+                <div class="photos">
+                    <img src="./IMG_20250201_132950.jpg" alt="ჩვენი ფოტო 1">
+                    <img src="./Messenger_creation_0C2D6CB2-6462-40C2-BCB2-8782A766DCF3.jpeg" alt="ჩვენი ფოტო 2">
+                    <img src="./Messenger_creation_60BC93A1-37FA-4633-BB43-F3DA3641CD3C.jpeg" alt="ჩვენი ფოტო 3">
+                    <img src="./Messenger_creation_6DC5AA35-A259-47F3-8D7B-78460F0D7C17.jpeg" alt="ჩვენი ფოტო 4">
+                    <img src="./Messenger_creation_8CE40F36-F80E-42A6-9EEE-E1F1E360252A.jpeg" alt="ჩვენი ფოტო 5">
+                    <img src="./Messenger_creation_AFFC54B5-6306-4460-867D-6215B54B0B58.jpeg" alt="ჩვენი ფოტო 6">
+                    <img src="./Messenger_creation_D745B26E-AE95-4AAB-ADC5-CE436F58437E.jpeg" alt="ჩვენი ფოტო 7">
+                    <img src="./Messenger_creation_F3A7DCFB-454D-4532-8E84-83654DBACC69.jpeg" alt="ჩვენი ფოტო 8">
+                    <img src="./Screenshot_20250214_011821_TikTok.jpg" alt="ჩვენი ფოტო 9">
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>შექმნილია სიყვარულით, შენი ლექსო 💌</p>
+        </footer>
+    </div>
+
+    <!-- მუსიკის პლეერი -->
+    <div class="music-player">
+        <button id="prevButton">⬅️</button>
+        <button id="playPauseButton">▶️</button>
+        <button id="nextButton">➡️</button>
+        <span id="currentSong">მუსიკა: 1/3</span>
+        <input type="range" id="progressBar" min="0" max="100" value="0">
+        <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+        <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="1">
+        <span id="songTitle">სიმღერის სახელი</span>
+    </div>
+
+    <!-- მუსიკის ელემენტი -->
+    <audio id="backgroundMusic" loop>
+        <source src="./you fell in love.  a playlist.mp3" type="you fell in love">
+        <source src="./Ed Sheeran - Perfect (Official Music Video).mp3" type="Ed Sheeran - Perfect">
+        <source src="./Ed Sheeran - Thinking Out Loud (Official Music Video).mp3" type="Ed Sheeran - Thinking Out Loud">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- JavaScript ფაილი -->
+    <script src="./script.js"></script>
+</body>
+</html>
